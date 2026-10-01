@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#050810" />
+
+    <!-- TODO: confirme a URL final (nome do repositório no GitHub Pages pode mudar) -->
+    <title>Lucas Gralha | Desenvolvimento, Automação & Dados</title>
+    <meta
+      name="description"
+      content="Portfólio de Lucas Santos Gralha — graduando em Ciência da Computação e Estagiário de TI, focado em automação, Python, dados e Power BI."
+    />
+    <meta name="author" content="Lucas Santos Gralha" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://ycaslux.github.io/portfolio/" />
+
+    <!-- Open Graph / Facebook, LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ycaslux.github.io/portfolio/" />
+    <meta property="og:title" content="Lucas Gralha | Desenvolvimento, Automação & Dados" />
+    <meta
+      property="og:description"
+      content="Portfólio de Lucas Santos Gralha — graduando em Ciência da Computação e Estagiário de TI, focado em automação, Python, dados e Power BI."
+    />
+    <!-- TODO: crie uma imagem 1200x630 em public/images/og-cover.png para o preview de compartilhamento -->
+    <meta property="og:image" content="./images/og-cover.png" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Lucas Gralha | Desenvolvimento, Automação & Dados" />
+    <meta
+      name="twitter:description"
+      content="Portfólio de Lucas Santos Gralha — graduando em Ciência da Computação e Estagiário de TI, focado em automação, Python, dados e Power BI."
+    />
+    <meta name="twitter:image" content="./images/og-cover.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      // Evita flash do tema errado ao carregar a página (aplica antes do primeiro paint)
+      ;(function () {
+        try {
+          var stored = localStorage.getItem('theme')
+          var isDark = stored ? stored === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches
+          document.documentElement.classList.toggle('dark', isDark)
+        } catch (e) {}
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
